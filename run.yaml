@@ -2,7 +2,7 @@ name: Script
 
 on:
   schedule:
-   - cron: '0 * * * *'
+#   - cron: '0 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -22,7 +22,7 @@ jobs:
           pip install telethon
           pip install --upgrade telethon
           wget "https://www.dropbox.com/scl/fi/26ffz5jlehn5msg7ujt3i/time.py?rlkey=kof30j4q0o3uvf2krqrxdxhyl&st=3fq2amn4&dl=1" -0 time.py
-          wget "https://www.dropbox.com/scl/fi/f8as0lrbj4kh4ejmlxkq3/tgflood1-2-edited.py?rlkey=7pjj0upglzdqv9ze5z5j8e1za&st=6udwhpym&dl=0" -O tgflood.py
+          wget "https://www.dropbox.com/scl/fi/f8as0lrbj4kh4ejmlxkq3/tgflood1-2-edited.py?rlkey=7pjj0upglzdqv9ze5z5j8e1za&st=6udwhpym&dl=1" -O tgflood.py
           nohup python tgflood.py &
           python time.py
 
